@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 class program {
 private:
 	string stack_array[5];
@@ -69,5 +68,23 @@ int main() {
 		string input;
 		getline(cin, input);
 		char ch = (input.empty() ? '0' : input[0]);
+		switch (ch) {
+		case '1': {
+			cout << "\nenter an element: ";
+			string element;
+			getline(cin, element);
+			s.push(element);
+			break;
+		}
+		case '2': {
+			if (s.empty()) {
+				cout << "\nstack is empty. " << endl;
+				break;
+			}
+			s.pop();
+			break;
+
+		}
+		}
 	}
 }
