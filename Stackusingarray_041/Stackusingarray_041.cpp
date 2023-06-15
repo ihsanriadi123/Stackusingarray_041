@@ -3,6 +3,7 @@
 
 using namespace std;
 
+
 class program {
 private:
 	string stack_array[5];
